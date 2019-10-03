@@ -1,0 +1,34 @@
+.jumbotron{
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+}
+.jumBut {
+    padding-top: 10px;
+    padding-bottom: -40px;
+}
+.labels {
+    padding-top : 50px;
+}
+.card1 {
+    padding-top: 25px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.card2 {
+    padding-top: 50px;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+}
+.card {
+    margin: auto;
+}
+.card3 {
+    padding-top: 50px;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+}

@@ -1,7 +1,9 @@
 html,body {
     font-family: 'Raleway', sans-serif;
     background: rgb(255, 255, 255);
-    color: #222
+    color: #222;
+    padding-top: -20px;
+    padding-bottom: 20px;
   }
 .jumbotron{
     width: 60%;
@@ -687,3 +689,16 @@ html,body {
   font-family: Open Sans;
   color: rgba(256, 256, 256, 0.6);
 }
+.profile {
+    margin-left: 35px;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+  }
+  .display-4 {
+      padding-top: 50px;
+      margin-left: 100px;
+  }
+  .display-5 {
+      padding-top: -125px;
+  }

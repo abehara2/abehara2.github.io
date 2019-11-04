@@ -1,7 +1,7 @@
 html,body {
     font-family: 'Raleway', sans-serif;
-    padding: 1em 2em;
-    background: rgb(255, 255, 255);
+
+    background: rgb(254, 254, 254);
     color: #222
   }
 .jumbotron{
@@ -27,10 +27,503 @@ html,body {
     margin: auto;
     width: 45%;
     text-align: center;
+    padding-bottom: 50px;
 }
-.card {
+
+
+
+.content a {
+    width: 100px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    display: block;
     margin: auto;
+    padding: 5px;
+    color: rgb(0, 0, 0)
 }
+.content {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 80px 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: 1s;
+}
+/* Hack4 Impact block*/
+.cardh4i {
+    margin: auto;
+    width: 360px;
+    height: 360px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cardh4i span{
+    height:100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: url(hackLogo.png);
+    transition:1s;
+}
+.cardh4i span:nth-child(1) {
+    z-index:10;
+    width: 25%;
+    transition-delay: 0s;
+}
+.cardh4i span:nth-child(2) {
+    z-index:9;
+    width: 50%;
+    transition-delay: 0s;
+}
+.cardh4i span:nth-child(3) {
+    z-index:8;
+    width: 75%;
+    transition-delay: 0s;
+}
+.cardh4i span:nth-child(4) {
+    z-index:7;
+    width: 100%;
+    transition-delay: 0s;
+}
+.cardh4i:hover span{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+.cardh4i:hover span:nth-child(1){
+    transition-delay: 0s;
+}
+.cardh4i:hover span:nth-child(2){
+    transition-delay: 0s;
+}
+.cardh4i:hover span:nth-child(3){
+    transition-delay: 0s;
+}
+.cardh4i:hover span:nth-child(4){
+    transition-delay: 0s;
+}
+.cardh4i:hover .content{
+    transform: translateY(0%);
+}
+/* Raad block*/
+.cardraad {
+    margin: auto;
+    width: 360px;
+    height: 360px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cardraad span{
+    height:100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: url(raadone.png);
+    transition:1s;
+}
+.cardraad span:nth-child(1) {
+    z-index:10;
+    width: 25%;
+    transition-delay: 0s;
+}
+.cardraad span:nth-child(2) {
+    z-index:9;
+    width: 50%;
+    transition-delay: 0s;
+}
+.cardraad span:nth-child(3) {
+    z-index:8;
+    width: 75%;
+    transition-delay: 0s;
+}
+.cardraad span:nth-child(4) {
+    z-index:7;
+    width: 100%;
+    transition-delay: 0s;
+}
+.cardraad:hover span{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+.cardraad:hover span:nth-child(1){
+    transition-delay: 0s;
+}
+.cardraad:hover span:nth-child(2){
+    transition-delay: 0s;
+}
+.cardraad:hover span:nth-child(3){
+    transition-delay: 0s;
+}
+.cardraad:hover span:nth-child(4){
+    transition-delay: 0s;
+}
+.cardraad:hover .content{
+    transform: translateY(0%);
+}
+/*Illinois block*/
+.carddpql {
+    margin: auto;
+    width: 360px;
+    height: 360px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carddpql span{
+    height:100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: url(ill.png);
+    transition:1s;
+}
+.carddpql span:nth-child(1) {
+    z-index:10;
+    width: 25%;
+    transition-delay: 0s;
+}
+.carddpql span:nth-child(2) {
+    z-index:9;
+    width: 50%;
+    transition-delay: 0s;
+}
+.carddpql span:nth-child(3) {
+    z-index:8;
+    width: 75%;
+    transition-delay: 0s;
+}
+.carddpql span:nth-child(4) {
+    z-index:7;
+    width: 100%;
+    transition-delay: 0s;
+}
+.carddpql:hover span{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+.carddpql:hover span:nth-child(1){
+    transition-delay: 0s;
+}
+.carddpql:hover span:nth-child(2){
+    transition-delay: 0s;
+}
+.carddpql:hover span:nth-child(3){
+    transition-delay: 0s;
+}
+.carddpql:hover span:nth-child(4){
+    transition-delay: 0s;
+}
+.carddpql:hover .content{
+    transform: translateY(0%);
+}
+/*Penn block*/
+.cardpenn {
+    margin: auto;
+    width: 360px;
+    height: 360px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cardpenn span{
+    height:100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: url(pen.png);
+    transition:1s;
+}
+.cardpenn span:nth-child(1) {
+    z-index:10;
+    width: 25%;
+    transition-delay: 0s;
+}
+.cardpenn span:nth-child(2) {
+    z-index:9;
+    width: 50%;
+    transition-delay: 0s;
+}
+.cardpenn span:nth-child(3) {
+    z-index:8;
+    width: 75%;
+    transition-delay: 0s;
+}
+.cardpenn span:nth-child(4) {
+    z-index:7;
+    width: 100%;
+    transition-delay: 0s;
+}
+.cardpenn:hover span{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+.cardpenn:hover span:nth-child(1){
+    transition-delay: 0s;
+}
+.cardpenn:hover span:nth-child(2){
+    transition-delay: 0s;
+}
+.cardpenn:hover span:nth-child(3){
+    transition-delay: 0s;
+}
+.cardpenn:hover span:nth-child(4){
+    transition-delay: 0s;
+}
+.cardpenn:hover .content{
+    transform: translateY(0%);
+}
+/*NeuroTech block*/
+.cardneuro {
+    margin: auto;
+    width: 360px;
+    height: 360px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cardneuro span{
+    height:100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: url(neuroweb.png);
+    transition:1s;
+}
+.cardneuro span:nth-child(1) {
+    z-index:10;
+    width: 25%;
+    transition-delay: 0s;
+}
+.cardneuro span:nth-child(2) {
+    z-index:9;
+    width: 50%;
+    transition-delay: 0s;
+}
+.cardneuro span:nth-child(3) {
+    z-index:8;
+    width: 75%;
+    transition-delay: 0s;
+}
+.cardneuro span:nth-child(4) {
+    z-index:7;
+    width: 100%;
+    transition-delay: 0s;
+}
+.cardneuro:hover span{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+.cardneuro:hover span:nth-child(1){
+    transition-delay: 0s;
+}
+.cardneuro:hover span:nth-child(2){
+    transition-delay: 0s;
+}
+.cardneuro:hover span:nth-child(3){
+    transition-delay: 0s;
+}
+.cardneuro:hover span:nth-child(4){
+    transition-delay: 0s;
+}
+.cardneuro:hover .content{
+    transform: translateY(0%);
+}
+/*125 block*/
+.card125 {
+    margin: auto;
+    width: 360px;
+    height: 360px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card125 span{
+    height:100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: url(android.png);
+    transition:1s;
+}
+.card125 span:nth-child(1) {
+    z-index:10;
+    width: 25%;
+    transition-delay: 0s;
+}
+.card125 span:nth-child(2) {
+    z-index:9;
+    width: 50%;
+    transition-delay: 0s;
+}
+.card125 span:nth-child(3) {
+    z-index:8;
+    width: 75%;
+    transition-delay: 0s;
+}
+.card125 span:nth-child(4) {
+    z-index:7;
+    width: 100%;
+    transition-delay: 0s;
+}
+.card125:hover span{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+.card125:hover span:nth-child(1){
+    transition-delay: 0s;
+}
+.card125:hover span:nth-child(2){
+    transition-delay: 0s;
+}
+.card125:hover span:nth-child(3){
+    transition-delay: 0s;
+}
+.card125:hover span:nth-child(4){
+    transition-delay: 0s;
+}
+.card125:hover .content{
+    transform: translateY(0%);
+}
+/*170 block*/
+.card170 {
+    margin: auto;
+    width: 360px;
+    height: 360px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card170 span{
+    height:100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: url(parkinsons.png);
+    transition:1s;
+}
+.card170 span:nth-child(1) {
+    z-index:10;
+    width: 25%;
+    transition-delay: 0s;
+}
+.card170 span:nth-child(2) {
+    z-index:9;
+    width: 50%;
+    transition-delay: 0s;
+}
+.card170 span:nth-child(3) {
+    z-index:8;
+    width: 75%;
+    transition-delay: 0s;
+}
+.card170 span:nth-child(4) {
+    z-index:7;
+    width: 100%;
+    transition-delay: 0s;
+}
+.card170:hover span{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+.card170:hover span:nth-child(1){
+    transition-delay: 0s;
+}
+.card170:hover span:nth-child(2){
+    transition-delay: 0s;
+}
+.card170:hover span:nth-child(3){
+    transition-delay: 0s;
+}
+.card170:hover span:nth-child(4){
+    transition-delay: 0s;
+}
+.card170:hover .content{
+    transform: translateY(0%);
+}
+/*270 block*/
+.card270 {
+    margin: auto;
+    width: 360px;
+    height: 360px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card270 span{
+    height:100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: url(recycle.png);
+    transition:1s;
+}
+.card270 span:nth-child(1) {
+    z-index:10;
+    width: 25%;
+    transition-delay: 0s;
+}
+.card270 span:nth-child(2) {
+    z-index:9;
+    width: 50%;
+    transition-delay: 0s;
+}
+.card270 span:nth-child(3) {
+    z-index:8;
+    width: 75%;
+    transition-delay: 0s;
+}
+.card270 span:nth-child(4) {
+    z-index:7;
+    width: 100%;
+    transition-delay: 0s;
+}
+.card270:hover span{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+.card270:hover span:nth-child(1){
+    transition-delay: 0s;
+}
+.card270:hover span:nth-child(2){
+    transition-delay: 0s;
+}
+.card270:hover span:nth-child(3){
+    transition-delay: 0s;
+}
+.card270:hover span:nth-child(4){
+    transition-delay: 0s;
+}
+.card270:hover .content{
+    transform: translateY(0%);
+}
+
+
 .card3 {
     padding-top: 50px;
     width: 45%;

@@ -523,6 +523,64 @@ html,body {
 .card270:hover .content{
     transform: translateY(0%);
 }
+/*Designathon block*/
+.carddesignathon {
+    margin: auto;
+    width: 360px;
+    height: 360px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.carddesignathon span{
+    height:100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: url(designathon2019.png);
+    transition:1s;
+}
+.carddesignathon span:nth-child(1) {
+    z-index:10;
+    width: 25%;
+    transition-delay: 0s;
+}
+.carddesignathon span:nth-child(2) {
+    z-index:9;
+    width: 50%;
+    transition-delay: 0s;
+}
+.carddesignathon span:nth-child(3) {
+    z-index:8;
+    width: 75%;
+    transition-delay: 0s;
+}
+.carddesignathon span:nth-child(4) {
+    z-index:7;
+    width: 100%;
+    transition-delay: 0s;
+}
+.carddesignathon:hover span{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+.carddesignathon:hover span:nth-child(1){
+    transition-delay: 0s;
+}
+.carddesignathon:hover span:nth-child(2){
+    transition-delay: 0s;
+}
+.carddesignathon:hover span:nth-child(3){
+    transition-delay: 0s;
+}
+.carddesignathon:hover span:nth-child(4){
+    transition-delay: 0s;
+}
+.carddesignathon:hover .content{
+    transform: translateY(0%);
+}
 
 
 .card3 {

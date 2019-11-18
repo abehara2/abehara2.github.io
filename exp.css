@@ -18,7 +18,7 @@
   padding-bottom: 50px;
 }
 .h3 {
-  color: white;
+  color:
 }
 
 .container{
@@ -71,7 +71,7 @@
 .container .card .face.face1 .content h3{
   margin: 10px 0 0;
   padding: 0;
-  color: white;
+  color: #fff;
   text-align: center;
   font-size: 1.5em;
 }
@@ -103,10 +103,10 @@
   font-weight: 900;
   color: #333;
   padding: 5px;
- 
+  /* border: 1px solid #333; */
 }
 
 .container .card .face.face2 .content a:hover{
-  background: #333;
+  /* background: #333; */
   color: #fff;
 }

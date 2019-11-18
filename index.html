@@ -1,186 +1,139 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <Title>Ashank's Website</Title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-    </head>
+<head>
+	<meta charset="utf-8">
+	<title>Ashank Behara</title>
+	<meta name="description" content="Ashank Behara's personal site.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico" />
 
-    <body>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navigation</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index2.html">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index3.html">Projects</a>
-                </li>
-                </ul>
-                <span class="navbar-text">
-                Ashank Behara
-                </span>
-            </div>
-        </nav>
-        <!-- <div class="alert alert-danger" role="alert">
-                Website is under contstruction
-              </div> -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110480801-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-        <div class="jumbotron">
-            <div class="row">
-            <img class="profile" src="profile.jpg" >
-            <h1 class="display-4 text-center"> <b> Ashank Behara
-                </b></h1>
-            </div>
-            <!-- <p class="lead display-5 text-center">MechE + CS @ UIUC</p> -->
-        
-            <hr class="my-4">
-            <p class = "text-left"> My name is Ashank Behara and I am currently a second year at the University of Illinois at Urbana-Champaign working towards a degree in <b>Mechanical 
-                    Engineering </b>and a minor in <b>Computer Science</b>. I am very interested in robotics and its relation to <b>machine learning</b> and would love to get into <b>project management</b>. In
-                    order to achieve these goals I have joined and created student organizations that work towards societal growth and the overall improvement of quality of life.</br>
-                    </br>     I have a lot of interests outside the classroom as well. I love playing sports and making music when I can. I have grown up playing tennis and was a Division II recruit coming out of high school.
-                    Although tennis is my first love, I love to play basketball and other racket sports. Outside of sports, I am a self taught guitarist and singer and I like to write music when I can.
+		gtag('config', 'UA-110480801-2');
+	</script>
 
+	<!-- FullStory -->
+	<script>
+		window['_fs_debug'] = false;
+		window['_fs_host'] = 'fullstory.com';
+		window['_fs_org'] = 'MVE7M';
+		window['_fs_namespace'] = 'FS';
+		(function(m,n,e,t,l,o,g,y){
+		    if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+		    g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+		    o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_host+'/s/fs.js';
+		    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+		    g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+		    g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+		    g.log = function(a,b) { g("log", [a,b]) };
+		    g.consent=function(a){g("consent",!arguments.length||a)};
+		    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+		    g.clearUserCookie=function(){};
+		})(window,document,window['_fs_namespace'],'script','user');
+	</script>
 
-                </br></br>
-                I am always free to talk so reach out to me at &nbsp; <code>abehara2@illinois.edu</code> &nbsp; if you have any questions about anything.
-                </p>
-                <div class="alert alert-secondary text-center" role="alert">
-                    Use the nav bar to check out my current and past projects and experience!
-                </div>
-            </br>
-            <div class="row jumBut">
-                    <div class="col-md-3 text-center">
-                        <l><a href="Fall2019Resume.pdf" class="fa fa-folder-open" style="font-size:35px;color:black;"></a></l>
-                    </div>
-                    <div class="col-md-3 text-center">
-                        <l><a href="https://github.com/abehara2" class="fa fa-github" style="font-size:35px;color:black;"></a></l>
-                    </div>
-                    <div class="col-md-3 text-center">
-                        <l><a href="https://www.linkedin.com/in/ashankbehara/" class="fa fa-linkedin" style="font-size:35px;color:black;"></a></l>
-                    </div>
-                    <div class="col-md-3 text-center ">   
-                        <l><a href="https://twitter.com/AshankBehara" class="fa fa-twitter" style="font-size:35px;color:black;"></a></l>
-                    </div>
-                </div>
-                
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="/homecss.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!-- JavaScript Files -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/typeit@5.10.7/dist/typeit.min.js"></script>
+  	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script type="text/javascript" src="/home.js"></script>
+  	<script type="text/javascript" src="/script.js"></script>
+</head>
+<body>
+	<!-- NAV BAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navigation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index4.html">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index3.html">Projects</a>
+            </li>
+            </ul>
+            <span class="navbar-text">
+            Ashank Behara
+            </span>
         </div>
+    </nav>
+	<div class="side-square left-square"></div>
+	<div class="side-square right-square"></div>
 
-            
-            
-    
-        
-        <!-- <div class ="labels text-center" id="Experience">
-            <h2>Experience</h2>
-        </div>
-           
-        <div class="row card1">
-            <div class="card text-center" style="width: 20rem;">
-                <img src="raadone.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Mechanical Engineering and Robotics Intern</h5>
-                  <p class="card-text">Redesigned cheaper model of UR10 6-axis robot using Autodesk Inventor, performed inertial
-                       and torque analysis for appropriate motor selection, and implemented a DH matrix for mechanics analysis in matlab.</p>
-                  <a href="https://abehara2.wixsite.com/mysite/6axis" class="btn btn-primary">View Project</a>
-            </div>
-        </div>
-            <div class="card text-center" style="width: 20rem;">
-                    <img src="hackLogo.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Software Developer</h5>
-                      <p class="card-text">Designing, developing, and deploying robust software and web applications for non-profit organizations. 
-                          Gaining practical programming experience in frontend, backend, and full stack development using a wide 
-                          variety of frameworks and packages.
-                      </p>
-                      <a href="https://uiuc.hack4impact.org" class="btn btn-primary">View Page</a>
-                    </div>
-            </div>
-            <div class="card text-center" style="width: 20rem;">
-                    <img src="neuroweb.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Co-Founder and Vice President</h5>
-                      <p class="card-text">Building innovative and impactful software solutions to solve neurotech problems. 
-                          Developing and training a machine learning algorithm with the extrapolated EEG data using openBCI software and hardware.
-                      </p>
-                      <a href="https://github.com/NeuroTech-at-UIUC" class="btn btn-primary">View Projects</a>
-                    </div>
-            </div>
-        </div>
-        <div class="row card2">
-                <div class="card text-center" style="width: 20rem;">
-                    <img src="ill.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Undergrad Research Intern</h5>
-                      <p class="card-text">Undergraduate research assistant in DPQL
-                           Lab at the UIUC working on the FIND-Wheels study. 
-                           Primarily working on Data Analysis and Signal Processing using Matlab/Octave with data generated from Vicon.</p>
-                      <a href="https://github.com/abehara2/findwheels" class="btn btn-primary">View Project</a>
-                    </div>
-                </div>
-                <div class="card text-center" style="width: 20rem;">
-                        <img src="pen.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Summer Research Intern</h5>
-                          <p class="card-text"> Developed safe flight path patterns for 
-                              clusters of drones in C++ and data sorting algorithm for tectonic plates and rock formations in Python.
-                               Developed Vicon user guide for lab. Assembled Minitaur robot.
+	<!-- HEADER -->
+	<section class="main-header" data-aos="fade-up">
+		<h2></h2>
+		<div class="typing">
+			<h3></h3>
+		</div>
+	</section>
 
-                            </p>
-                          <a href="Vicon3DMCDocumentation.pdf" class="btn btn-primary">View Work</a>
-                        </div>
-                </div>
-                
-            </div> -->
-            <!-- <div class ="labels text-center" id="Projects">
-                    <h2>Projects</h2>
-            </div> -->
-            
-                <!-- <div class="row card1 bottomRow">
-                        <div class="card text-center" style="width: 20rem;">
-                            <img src="blank.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Redesign for Recyclability</h5>
-                              <p class="card-text">Redesigned mechanical pencil for assembly efficiency and improved reprocessability. 
-                                    Created full CAD model and Bill of Materials and performed a complete Design of Experiment and Assembly.</p>
-                              <a href="https://abehara2.wixsite.com/mysite/design-for-manufacturability" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                        <div class="card text-center" style="width: 20rem;">
-                                <img src="blank.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Tremor Resistant Cane</h5>
-                                  <p class="card-text">Designed and developed a self-stabilizing cane using CREO Parametric for people with severe tremors.
-                                        Created full CAD model, PDS, Pugh Matrix, tolerance analysis, and engineering drawings.
-                                  </p>
-                                  <a href="https://abehara2.wixsite.com/mysite/mechse-projects" class="btn btn-primary">View Page</a>
-                                </div>
-                        </div>
-                        <div class="card text-center" style="width: 20rem;">
-                                <img src="blank.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">UIUC Wellness Contact Interface</h5>
-                                  <p class="card-text">Designed and programmed a wellness android application for Illinois students. The purpose of the app is
-                                        to give students one place where they can find resources for their health.
-                                  </p>
-                                  <a href="https://github.com/abehara2/IllinoisStudentWellnessContactInterface" class="btn btn-primary">View Projects</a>
-                                </div>
-                        </div>
-                    </div> -->
-                   
-    </body>
+	<!-- ABOUT ME -->
+	<section class="about-me" data-aos="fade-up">
+		<img src="pp.jpeg" style = " border-radius: 5%"alt="Ashank Behara" class="me-pic">
+		<div class="about-info">
+            <div style="display: inline;" >
+            <h4 style="color: #00aced">Hi, I'm </h4> <h4 id="whatIAm"></h4>
+            </div>
+			<p>
+                I’m a sophomore at <strong>UIUC</strong> studying <strong>Mechanical Engineering</strong> with a minor in <strong>Computer Science.</strong> <br> <br>
+                I’m interested in robotics and its relation to <strong>machine learning</strong> and would love to get into <strong>product management</strong>.<br> <br>
+                I chose engineering so I could <strong>make an impact</strong>. I have created RSO's such as <strong>NeuroTech</strong> to tackle brain related issues and impairments and have joined organizations like
+                 <strong>Hack4Impact</strong> to make a difference in my community. <br> <br>
+                 Outside of the classroom I love to play <strong> tennis </strong> and <strong>basketball</strong> and love to write and play <strong>music</strong>. If you ever have questions or would like to chat feel free to email me!
+			</p>
+			<div class="about-me" style="padding-top:50px">
+				<div class="socialNew">
+                    <ul class = "ulsoc">
+                        <li class = "lisoc"><a class = "asoc"href="https:/www.linkedin.com/in/ashankbehara/" style="text-decoration: none;">
+                                <i class="fa fa-linkedin" aria-hidden="true" ></i>
+                        </a></li>
+                        <li class = "lisoc"><a class = "asoc"href="https://mobile.twitter.com/ashankbehara" style="text-decoration: none;">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a></li>
+                        <li class = "lisoc"><a class = "asoc"href="Fall2019Resume.pdf">
+                                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </a></li>
+                        <li class = "lisoc"><a class = "asoc" href="mailto:abehara2@illinois.edu">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </a></li>
+                        <li class = "lisoc"><a class = "asoc"href="https://github.com/abehara2" style="text-decoration: none;">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                        </a></li>
+                    </ul>
+                    <!-- <div><a href="https://www.linkedin.com/in/ashankbehara/"><img src="linkedin.png" alt="LinkedIn"></a></div>
+					<div><a href="https://www.instagram.com/the_ashank/"><img src="ig.png" alt="Instagram"></a></div>
+					<div><a href="https://mobile.twitter.com/ashankbehara"><img src="twitter.png" alt="Twitter"></a></div> -->
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<!-- EXPERIENCE -->
+	
+
+	<!-- CONNECT -->
+	
+
+	<!-- AOS -->
+	<script>AOS.init({ duration: 1000, once: true });</script>
+</body>
 </html>

@@ -1,0 +1,398 @@
+/* -------------------- GENERAL -------------------- */
+html, body, div, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    --blue: #0068ED;
+    --black: #000000;
+    --grey: #848484;
+}
+
+h1, h2, h6 {
+    font-family: 'Avenir Next';
+    font-weight: bold;
+    font-style: normal;
+    color: var(--blue);
+}
+
+
+
+h3, h4 {
+    font-family: 'Avenir Next';
+    font-weight: 500;
+    font-style: normal;
+    color: var(--black);
+}
+
+h5 {
+    font-family: 'Avenir Next';
+    font-weight: 600;
+    font-style: normal;
+    color: var(--black);
+}
+
+
+h2 { font-size: 35px; }
+h3 { font-size: 30px; }
+h4 { font-size: 30px; }
+h5 { font-size: 23px; }
+h6 { font-size: 19px; }
+
+p, a {
+    font-family: 'Avenir Next';
+    font-weight: normal;
+    font-style: normal;
+    color: var(--black);
+}
+
+header, .main-header, .about-me, .experience, #connect, .projects, .hobbies, .stats {
+    width: 65%;
+    margin: 0px auto;
+}
+
+/* -------------------- NAV BAR -------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.pages {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.pages a, header a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.pages a:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 1px;
+    right: 0;
+    background: var(--black);
+    transition: width .3s ease;
+}
+
+.pages a:hover:after { 
+    width: 100%;
+    left: 0;
+    background: var(--black);
+}
+
+/* -------------------- SQUARES -------------------- */
+.side-square {
+    position: fixed;
+    border: 3px solid rgba(242, 242, 242, 0.5);
+    width: 400px;
+    height: 400px;
+    z-index: -10000000;
+}
+
+.left-square {
+    left: -10%;
+    top: 30%;
+    transform: rotate(20deg);
+}
+
+.right-square {
+    right: -10%;
+    top: -15%;
+    transform: rotate(-20deg);
+}
+
+/* -------------------- HEADER -------------------- */
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+}
+
+.typing { display: inline-flex; }
+
+/* -------------------- ABOUT ME -------------------- */
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-info {
+    width: 70%;
+    margin-left: 50px;
+}
+
+.about-info h4 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.about-info b, .connect-text b {
+    font-weight: 600;
+}
+
+.about-info p, .resume { font-size: 17px; }
+
+.me-pic {
+    height: 500px;
+    border-radius: 6px;
+}
+
+.about-info-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.resume {
+    color: var(--blue);
+    text-decoration: inherit;
+    display: inline-block;
+}
+
+.resume:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 1px;
+    right: 0;
+    background: var(--blue);
+    transition: width .3s ease;
+}
+
+.resume:hover:after { 
+    width: 100%;
+    left: 0;
+    background: var(--blue);
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 170px;
+}
+
+.social img {
+    width: 27px;
+    height: auto;
+}
+
+/* -------------------- EXPERIENCE -------------------- */
+.experience, .projects {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects { margin-bottom: 150px; }
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.experience h2, .projects h2 {
+    align-self: flex-start;
+    margin-bottom: 50px;
+}
+
+.card-home {
+    padding: 3% 3%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(36,50,66, 0.05);
+    transition: .15s ease-in-out;
+}
+
+.card-home:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 30px rgba(36,50,66,0.15);
+}
+
+.card { overflow: hidden; }
+.card h6 { color: var(--grey); }
+.card img, [class="card-home"] img {
+    width: 320px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: transform .5s ease;
+}
+.card p {
+    width: 320px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.card img:hover {  transform: scale(1.1); }
+
+.see-more {
+    text-decoration: none;
+    box-shadow: none;
+    align-self: center;
+}
+
+.see-more:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.see-more h5 { padding-right: 15px; }
+
+.see-more div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    /*transform: translateY(-50%);*/
+    cursor: pointer;
+}
+
+.arrow { transition: 0.2s; }
+.see-more:hover .arrow { transform: translateX(6px); }
+
+/* -------------------- CONNECT -------------------- */
+#connect { margin: 150px auto; }
+
+.connect-text { margin-top: 30px; }
+.connect-text p, .connect-text h4 { font-size: 22px; }
+.connect-text b { color: var(--blue); }
+
+.email {
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+
+/* -------------------- HOBBIES -------------------- */
+.hobbies {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobbies h2 {
+    align-self: flex-start;
+    margin-bottom: 50px;
+}
+
+.hobby {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.hobby img, .hobby video {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    max-height: 200px;
+}
+
+.hobby-text {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.hobby-text h5 { margin-bottom: 20px; }
+
+/* -------------------- STATS -------------------- */
+.stats {
+    margin-top: 150px;
+}
+
+.stats h2 {
+    align-self: flex-start;
+    margin-bottom: 50px;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.numbers h5 { font-size: 17px; }
+.numbers h1 { font-size: 70px; }
+.numbers div { text-align: center; }
+
+/* -------------------- MEDIA QUERIES -------------------- */
+/* Phone */
+@media (max-width: 650px) {
+    header, .main-header, .about-me, .experience, #connect, .projects, .hobbies, .stats {
+        width: 90vw;
+        margin: 0px auto;
+    }
+
+    /* Nav Bar */
+    header { margin-top: 5%; }
+    .pages { width: 200px; }
+    .pages a { font-size: 14px; }
+    h1 { font-size: 30px; }
+
+    .side-square { display: none; }
+
+    /* Header */
+    h2 { font-size: 30px; }
+    h3 { font-size: 25px; }
+
+    .about-me, .row, .hobby, .numbers {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .me-pic {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .social img { width: 27px; height: auto; }
+    .about-info, .hobby-text { margin: 20px 0px 0px 0px; }
+    .about-info-bottom { flex-direction: column; }
+    .resume { margin-bottom: 10px; }
+    .hobby-text { width: 70%; }
+
+    .experience, #connect, .hobbies, .stats { margin-top: 50px; }
+    .card-home, .card, .hobby, .numbers div { margin-bottom: 30px; }
+    .numbers h1 { font-size: 60px; }
+
+    /* Connect */
+    #connect { margin-bottom: 50px; }
+}
+
+/* Tablet - Landscape */
+@media (device-width: 1024px) and (orientation: landscape) {
+    .me-pic { height: 380px; }
+    .card img, [class="card-home"] img, .card p { width: 260px; }
+    h5 { font-size: 20px; }
+    h6 { font-size: 17px; }
+    .connect-text p, .connect-text h4 { font-size: 20px; }
+    .hobby-text h5 { margin-bottom: 5px; }
+    .numbers h5 { font-size: 17px; }
+    .numbers h1 { font-size: 60px; }
+}

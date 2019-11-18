@@ -1,0 +1,304 @@
+HTML CSSResult
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction:column;
+    width: 250px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1546530728-628d62351932');
+    background-size:cover;
+    border-radius: 30px;
+    position:relative;
+    overflow: hidden;}
+.shadow {
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+}
+#modal {
+    display: none;
+}
+.circle {
+    font-size:50px;
+    font-weight: normal;
+    color: rgba(98,0,238,1);
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 1px 0 0 1px;
+    background: rgba(3,218,197,.9);
+    border-radius: 10000px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all cubic-bezier(.7,0,.3,1);
+    position: absolute;
+    bottom:10px;
+    right:10px;
+}
+.card > h1{
+    font-size:20px;
+    color: #000;
+    position: absolute;
+    top:20px;
+    left:20px;
+    z-index: 999;
+    transition: 0.4s all cubic-bezier(.7,0,.3,1);
+}
+.card > p{
+    display: block;
+    font-size:15px;
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    z-index: 999;
+    transition: 0.2s all cubic-bezier(.7,0,.3,1);
+    line-height: 1.5;
+}
+.tags {
+    z-index: 988;
+    font-size:11px;
+    color:#fff;
+    position: absolute;
+    top:60px;
+    left:270px;
+    width: 500px;
+    height: 25px;
+    /*overflow: hidden;*/
+    opacity: 0;
+    transform: translateX(0);
+    transition: .4s all cubic-bezier(1,-0.1,0,1.1);
+}
+.fas{
+    margin: 0 5px 0 0;
+}
+a.tag:link{
+    color:#fff;
+    height: 19px;
+    box-sizing:border-box;
+    display: inline-block;
+    background-color: rgba(0,0,0,.3);
+    padding: 2px 9px;
+    margin: 0 2px 0 0;
+    border-radius:15px;
+    text-decoration:none;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+    
+}
+#modal:checked ~ h1{
+    color:#fff;
+    transition: 0.4s all cubic-bezier(.7,0,.3,1);
+}
+#modal:checked ~ p{
+    opacity: 1;
+    transition: 0.2s all cubic-bezier(.7,0,.3,1) 0.2s;
+}
+#modal:checked + .circle {
+    color: rgba(3,218,197,1);
+    width: 1500px;
+    height: 1500px;
+    background: rgba(98,0,238,.75);
+    transition: 0.4s all cubic-bezier(.7,0,.3,1);
+    bottom:-720px;
+    right:-720px;
+}
+.rotatePlus {
+    transform: rotate(0deg);
+    transition: .4s transform cubic-bezier(.7,0,.3,1);
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+#modal:checked ~ .circle > .rotatePlus {
+    transform: rotate(945deg);
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+#modal:checked ~ .tags {
+    opacity: 1;
+    transform: translateX(-250px);
+    transition: .4s all cubic-bezier(1,-0.1,0,1.1);
+}
+#modal:checked ~ .tags>a.tag:hover {
+    transition: .2s all ease-in-out;
+    color:#000;
+    /*font-weight: bold;*/
+    background-color: #03DAC3;
+    box-shadow: 0px 0px 7px 3px rgba(3,218,197,0.2);
+}
+.tags>a.tag:visited{
+    color:#fff;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction:column;
+    width: 250px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1546530728-628d62351932');
+    background-size:cover;
+    border-radius: 30px;
+    position:relative;
+    overflow: hidden;}
+.shadow {
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+}
+#modal {
+    display: none;
+}
+.circle {
+    font-size:50px;
+    font-weight: normal;
+    color: rgba(98,0,238,1);
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 1px 0 0 1px;
+    background: rgba(3,218,197,.9);
+    border-radius: 10000px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all cubic-bezier(.7,0,.3,1);
+    position: absolute;
+    bottom:10px;
+    right:10px;
+}
+.card > h1{
+    font-size:20px;
+    color: #000;
+    position: absolute;
+    top:20px;
+    left:20px;
+    z-index: 999;
+    transition: 0.4s all cubic-bezier(.7,0,.3,1);
+}
+.card > p{
+    display: block;
+    font-size:15px;
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    z-index: 999;
+    transition: 0.2s all cubic-bezier(.7,0,.3,1);
+    line-height: 1.5;
+}
+.tags {
+    z-index: 988;
+    font-size:11px;
+    color:#fff;
+    position: absolute;
+    top:60px;
+    left:270px;
+    width: 500px;
+    height: 25px;
+    /*overflow: hidden;*/
+    opacity: 0;
+    transform: translateX(0);
+    transition: .4s all cubic-bezier(1,-0.1,0,1.1);
+}
+.fas{
+    margin: 0 5px 0 0;
+}
+a.tag:link{
+    color:#fff;
+    height: 19px;
+    box-sizing:border-box;
+    display: inline-block;
+    background-color: rgba(0,0,0,.3);
+    padding: 2px 9px;
+    margin: 0 2px 0 0;
+    border-radius:15px;
+    text-decoration:none;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+    
+}
+#modal:checked ~ h1{
+    color:#fff;
+    transition: 0.4s all cubic-bezier(.7,0,.3,1);
+}
+#modal:checked ~ p{
+    opacity: 1;
+    transition: 0.2s all cubic-bezier(.7,0,.3,1) 0.2s;
+}
+#modal:checked + .circle {
+    color: rgba(3,218,197,1);
+    width: 1500px;
+    height: 1500px;
+    background: rgba(98,0,238,.75);
+    transition: 0.4s all cubic-bezier(.7,0,.3,1);
+    bottom:-720px;
+    right:-720px;
+}
+.rotatePlus {
+    transform: rotate(0deg);
+    transition: .4s transform cubic-bezier(.7,0,.3,1);
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+#modal:checked ~ .circle > .rotatePlus {
+    transform: rotate(945deg);
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+#modal:checked ~ .tags {
+    opacity: 1;
+    transform: translateX(-250px);
+    transition: .4s all cubic-bezier(1,-0.1,0,1.1);
+}
+#modal:checked ~ .tags>a.tag:hover {
+    transition: .2s all ease-in-out;
+    color:#000;
+    /*font-weight: bold;*/
+    background-color: #03DAC3;
+    box-shadow: 0px 0px 7px 3px rgba(3,218,197,0.2);
+}
+.tags>a.tag:visited{
+    color:#fff;
+}

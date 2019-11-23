@@ -54,7 +54,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="card">
+                  <!-- <div class="card">
                       <div class="face face1">
                           <div class="content">
                               <img src="">
@@ -67,6 +67,264 @@
                                   <a href="https://github.com/abehara2/IllinoisStudentWellnessContactInterface">Read More</a>
                           </div>
                       </div>
+                  </div> -->
+                  <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="">
+                            <h3>Design for Recyclability</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Redesigned mechanical pencil using CREO Parametric for improved assembly efficieny. Performed DoE.</p>
+                                <a data-toggle="modal" data-target="#pencilmodal">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="pencilmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                    <div class="modal-dialog modal-lg" role="document" >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Tremor Adapting Cane</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            For a class I took during the Spring 2019 semester, the final project required students to redesign a common household item 
+                            for increased assembly efficiency and recyclability. The class is titled ME 270 and I chose to redesign a mechanical pencil.</br></br>
+
+                            <div style="text-align: center;"><h7><b> CAD Assembly & Part Engineering Drawings </b></h7> </br> </br></div>
+                            <img src="pencilOG.png" width="100%"> </img> </br></br>
+                            <img src="engdrwpen.png" width="100%"> </img> </br></br>
+
+                            <div style="text-align: center;"><h7><b> DFM and DFA </b></h7> </br> </br></div>
+                            <img src="prtbompencil.png" style="width: 100%;"> </img></br></br>
+                            For each of the parts of the original assembly, I asked the three primary DFA questions regarding each component. </br></br>
+                            &nbsp;&nbsp; 1. Does the part move simultaneously with another part? </br>
+
+                            &nbsp;&nbsp; 2. Is the part of a different material, or isolated form, all the other parts already assembled? </br>
+
+                            &nbsp;&nbsp; 3. Can the manufacturing method and tolerance be the same for these parts? </br></br>
+
+                            After answering these questions, only three of the parts are essential and the other three can be combined or 
+                            eliminated entirely from the product. This leaves a theoretical minimum of 3 parts on the assembly.</br></br>
+
+                            <div style="text-align: center;"><h7><b>Total Assembly Time </b></h7> </br> </br></div>
+                                <b>Symmetry</b> </br>
+                                &nbsp;Tip of Pencil: α = 360 | β = 360 | sum = 720 | time = 2.0s</br>
+
+                                &nbsp;Eraser Casing: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                &nbsp;Pencil Body: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                &nbsp;Lead Container: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                &nbsp;Pencil Grip: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                &nbsp;Twisting Top: α = 360 | β = 0 | sum = 360 | time = 1.0s</br></br>
+
+                                ​
+
+                                <b>Handling & Alignment Times</b></br>
+
+                                &nbsp;Tip of Pencil: 0.5s (placement) + 1.0s (turning) + 2.0s (fastening) + 2.0s (symmetry)</br>
+
+                                &nbsp;Eraser Casing: 0.5s (placement) + 0.3s (hole) + 1.0s (symmetry)</br>
+
+                                &nbsp;Pencil Body: 0.5s (placement) + 1.0s (symmetry)</br>
+
+                                &nbsp;Lead Container: 0.5s (placement) + 0.3s (hole) + 1.0s (symmetry)</br>
+
+                                &nbsp;Pencil Grip: 0.5s (placement) + 0.1s (pin) + 1.0s (symmetry)</br>
+
+                                &nbsp;Twisting Top: 0.5s (placement) + 0.1s (pin) + 1.0s (symmetry)</br></br>
+
+                                ​
+
+                                <b>Handling Difficulties</b></br>
+
+                                &nbsp;Tip of Pencil: 1.9s (small + slippery)</br>
+
+                                &nbsp;Eraser Casing: 1.5s (slippery)</br>
+
+                                &nbsp;Pencil Body: 0.0s</br>
+
+                                &nbsp;Lead Container: 1.5s (slippery)</br>
+
+                                &nbsp;Pencil Grip: 1.9s (slippery + flexible)</br>
+
+                                &nbsp;Twisting Top: 0.0s</br></br>
+
+                                &nbsp;<b>Total Time:</b> 22.4s</br></br>
+
+                                <div style="text-align: center;"><h7><b>DFA Efficiency & Index</b></h7> </br> </br></div>
+
+                                <b>Formula</b> </br>
+                                (Ideal Time to Assemble) x (Theoretical Minimum) / (Total Time) </br> </br>
+
+                                ​
+
+                                <b> Calculation</b> <br/>
+
+                                (3) (3) / 22.4 = 0.401785 = 40.178571% efficiency</br></br>
+
+                                ​
+
+                                If the DFA index is less than the 20% to 25% range, the assembly is in dire need of a redesign. 
+                                40.1785% is above this range and although a redesign is unnecessary, it would be a good idea to 
+                                redesign in order to improve the efficiency further. </br></br>
+
+                                <div style="text-align: center;"><h7><b> Redesign Concepts </b></h7> </br> </br></div>
+                                As for the redesign, there is not a lot of room for improvement for this product's functionality or 
+                                recyclability. There is a possibility to merge the pencil body (#5 on Eng. Drawing) and the lead container 
+                                (#4 on Eng. Drawing) which would not reduce the amount of material being used or the cost of the product. 
+                                There is also some complication to this as the mechanism to dispense the graphite is built into the lead 
+                                container, but at a glance this seems like a possible idea. A very feasible redesign that would help 
+                                recyclability would be to combine the pencil body and the pencil tip (#1 on Eng. Drawing). The pencil
+                                 tip is a metal screw-on and is separate only for the aesthetic and provides no real benefit to the 
+                                 rigidity, cost, or recyclability of the product.  In fact, replacing the metal tip with plastic will
+                                  increase the reprocess-ability of the product. The last idea to improve this product would be to get r
+                                  id of the gel grips. Gel grips have recently started to be manufactured using thermoplastic elastomers, 
+                                  the most common of these being polyphenylene ether. These thermoplastics are well known for their 
+                                  reprocess-ability and provide many ecological benefits to other rubbers. Eliminating this grip 
+                                  does not benefit the recyclability of the product, but it will help to drive down the cost of the 
+                                  pencil. If all of these changes are implemented, there is a theoretical minimum of three parts. 
+                                  However, two of the changes provide little to no benefit for the recyclability of the product so 
+                                  it would be ideal to cut the assembly down to five parts by combining the pencil tip 
+                                  and pencil body. </br></br>
+
+                                  <img src="pughpencil.png" style="width: 100%;"> </img><br/> <br/>
+
+                                  Depicted above is a Pugh Matrix outlining the three redesign possibilities that could be implemented on a 
+                                  newer version of the product. According to this diagram, the only suggestion that would increase 
+                                  recyclability, let alone cost and rigidity, would be, as discussed before, to merge the pencil 
+                                  body and tip. Combining both the tip and the body would eliminate an extra material being used in
+                                   fabrication which would aid reprocessability. <br><br>
+
+                                   <div style="text-align: center;"><h7><b> Redesign of Pencil Body </b></h7> </br> </br></div>
+                                   <img src="redesbody.png" style="width: 100%;"></img> <br><br>
+                                   Depicted below is an outline drawing that has the assembled view and exploded view showing that the
+                                    redesigned pencil body indeed fits with the other parts from the original product. The pencil grip 
+                                    in the exploded view is still attached to the pencil body.<br><br>
+                                    <img src="outlinepen.png" style="width: 100%;"></img> <br><br>
+
+                                    <div style="text-align: center;"><h7><b> Design of Experiment </b></h7> </br> </br></div>
+                                    The hypothetical main problem with this redesign is that for every 40 clicks to dispense lead out of
+                                     the pencil, the lead jams twice. The variables that affect the dispensing of the lead are the dispensing 
+                                     force and the coefficient of friction of the polypropylene that was injection molded to form the part.<br><br>
+
+                                    For this process, I decided that a 2  factorial design would need to be performed meaning that the two 
+                                    variables discussed above will be examined on a low level (-1) and a high level (+1). This factorial 
+                                    design contains 4 unique testing conditions that are necessary in order to collect all data possible.
+                                     The first table shows the design variables with their low and high levels and the second table shows 
+                                     the tests. <br><br>
+
+                                     <img src="doeone.png" style="width: 100%;"></img> <br><br>
+
+
+                                    From this data we see that there are 2 valuable comparisons that can tell us how the jamming varies according to 
+                                    the coefficient of friction and 2 valuable comparisons that we can use to tell us how the force of dispensing 
+                                    affects jamming. For the coefficient of friction I can use the  horizontal line segments that signify
+                                     Test 1-2 and Test 3-4 and for the force of dispensing I can use the vertical lines that signify Test 1-3 and Test 2-4.<br><br>
+
+                                     <img src="doetwo.png" style="width: 100%;"></img> <br><br>
+                                     From this data we can see that as coefficient of friction increases, the number of jams increases as the evaluated equation yields a
+                                      positive number. On the other hand, as force of dispensing increases, the number of jams decreases as denoted by the negative value. <br><br>
+                                      <div style="text-align: center;"><h7><b> Variance & Significant Results </b></h7> </br> </br></div>
+
+                                      <img src="variancepen.png" style="width: 100%;"></img> <br><br>
+
+                                      From calculating the variance and standard deviation we can then find the significant effects and sigma significance. The 2 sigma 
+                                      significance is found by multiplying the average standard deviation by 2 and the significant values are 
+                                      found through sum product calculations like those done previously. The 2 sigma significance is useful 
+                                      because any values that are greater than this are considered significant. <br><br>
+
+                                      <img src="stdpen.png" style="width: 100%;"></img> <br><br>
+                                      After looking at the data, it was deemed that only the coefficient of friction had a significant effect on the performance
+                                       on the lead dispensing mechanism. In order to enact this change in the design, it would be better to use 
+                                       HDPE instead of polypropylene for the redesigned pencil body and cap because it has a significantly 
+                                       lower static coefficient of 0.100. This design change mildly affects the reprocessability of the pencil 
+                                       because it is a different material, but does not affect its recyclability.<br><br>
+
+                                       <div style="text-align: center;"><h7><b> Re-DFM & Re-DFA </b></h7> </br> </br></div>    
+                                       
+                                       <b>Cost Analysis</b><br>
+                                       Depicted below is a revised Bill of Materials with the redesigned pencil body. There were no fastening costs 
+                                       in this revision as there are no bolts, screws, rivets, etc.<br><br>
+
+                                       <img src="redfa.png" style="width: 100%;"></img> <br><br>
+                                       <div style="text-align: center;"><h7><b> New Total Assembly Time </b></h7> </br> </br></div>    
+                                       <b>Symmetry</b></br>
+
+                                        Eraser Casing: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                        Pencil Body: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                        Lead Container: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                        Pencil Grip: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                        Twisting Top: α = 360 | β = 0 | sum = 360 | time = 1.0s</br></br>
+
+                                        ​
+
+                                        
+                                        <b>Handling & Alignment Times</b></br>
+
+                                        Eraser Casing: 0.5s (placement) + 0.3s (hole) + 1.0s (symmetry)</br>
+
+                                        Pencil Body: 0.5s (placement) + 1.0s (symmetry)</br>
+
+                                        Lead Container: 0.5s (placement) + 0.3s (hole) + 1.0s (symmetry)</br>
+
+                                        Pencil Grip: 0.5s (placement) + 0.1s (pin) + 1.0s (symmetry)</br>
+
+                                        Twisting Top: 0.5s (placement) + 0.1s (pin) + 1.0s (symmetry)</br></br>
+
+                                        ​
+
+                                        <b>Handling Difficulties</b></br>
+
+                                        Eraser Casing: 1.5s (slippery)</br>
+
+                                        Pencil Body: 0.0s</br>
+
+                                        Lead Container: 1.5s (slippery)</br>
+
+                                        Pencil Grip: 1.9s (slippery + flexible)</br>
+
+                                        Twisting Top: 0.0s</br></br>
+
+                                        ​
+
+                                        &nbsp;<b>Total Time:</b> 13.0s</br></br>
+
+                                        <div style="text-align: center;"><h7><b>New DFA Efficiency & Index</b></h7> </br> </br></div>
+
+                                        <b>Formula</b> </br>
+                                        (Ideal Time to Assemble) x (Theoretical Minimum) / (Total Time) </br> </br>
+
+                                        ​
+
+                                        <b> Calculation</b> <br/>
+
+                                        (3) (3) / 13.0 = 0.692307 = 69.2308% efficiency</br></br>
+                                        Overall the redesign of the product seemed successful. The DFA efficiency rose by 29.0523%, 
+                                        total costs decreased by $0.40, and total investment costs decreased as well. As for function
+                                         of the product, the function seems to be close to the same. This is good because the product,
+                                          pre-redesign, was fully functional. The small fix the redesign did make was when fidgeting with 
+                                          the pencil, the cap would sometimes fall off, but because the cap and body are now one piece, 
+                                          this is no longer an issue. In conclusion, the redesign improved cost, functionality, and kept 
+                                          the quality of the product around the same, if not better.
+
+                        </div>
+                        <div class="modal-footer">
+                          <!-- <a type="button" data-dismiss="modal">Close</a> -->
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="card">
                           <div class="face face1">
@@ -78,26 +336,55 @@
                           <div class="face face2">
                               <div class="content">
                                   <p>Designed tremor resistant cane using CREO Parametric for people with muscle degenerative diseases.</p>
-                                      <a href="https://abehara2.wixsite.com/mysite/mechse-projects">Read More</a>
+                                      <a data-toggle="modal" data-target="#canemodal">Read More</a>
                               </div>
                           </div>
+                      </div>
+                      <div class="modal fade" id="canemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Tremor Adapting Cane</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                My product is a therapeutic cane that resists tremors from those with muscle degenerative diseases, 
+                                specifically Parkinson’s, that helps increases stability, safety, and independence of its user.​​ The idea for targeting 
+                                people with Parkinson’s and other muscle-degenerative diseases came from knowing those who have suffered. My grandfather
+                                 has been to the hospital for falling due to his tremors causing him to alter the position of his cane. After seeing my grandfather
+                                  go through these scary and severe falls, it occurred to me that many other people with similar conditions may go through experiences like these. 
+                                  After assessing a target group and the problem I wanted to fix, I came up with the idea to create a cane that resists the forces of tremors to 
+                                  prevent unnecessary falls.</br></br>
+
+                                <img src="cane.png" width="100%"> </img> </br></br>
+                                <img src="bomcane.png" width="100%"> </img>
+                            </div>
+                            <div class="modal-footer">
+                              <!-- <a type="button" data-dismiss="modal">Close</a> -->
+                            </div>
+                          </div>
+                        </div>
                       </div>
               </div>
               <div class="container poop" style="display: flex;flex-direction: row; align-items: center;">
-                      <div class="card">
-                          <div class="face face1">
-                              <div class="content">
-                                  <img src="">
-                                  <h3>Design for Recyclability</h3>
-                              </div>
-                          </div>
-                          <div class="face face2">
-                              <div class="content">
-                                  <p>Redesigned mechanical pencil using CREO Parametric for improved assembly efficieny. Performed DoE.</p>
-                                      <a href="https://abehara2.wixsite.com/mysite/design-for-manufacturability">Read More</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="">
+                            <h3>UIUC Wellness App</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Built contact interface in Android Studio for UIUC students to get mental and physical health checkups easier.</p>
+                                <a href="https://github.com/abehara2/IllinoisStudentWellnessContactInterface">Read More</a>
+                        </div>
+                    </div>
+                </div>      
+                  
+                  
+              </div>
     </body>
 </html>

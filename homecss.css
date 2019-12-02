@@ -75,6 +75,12 @@ header, .main-header, .about-me, .experience, #connect, .projects, .hobbies, .st
     margin-bottom: 30px;
 }
 
+.about-info b, .connect-text b {
+    font-weight: 600;
+}
+
+.about-info p, .resume { font-size: 17px; }
+
 .me-pic {
     height: 500px;
     border-radius: 6px;
@@ -90,4 +96,113 @@ header, .main-header, .about-me, .experience, #connect, .projects, .hobbies, .st
 
 
 
+
+
+
+
+/* -------------------- MEDIA QUERIES -------------------- */
+/* Phone */
+@media (max-width: 650px) {
+    header, .main-header, .about-me, .experience, #connect, .projects, .hobbies, .stats {
+        width: 90vw;
+        margin: 0px auto;
+    }
+
+    /* Nav Bar */
+    header { margin-top: 3%; }
+    .pages { width: 200px; }
+    .pages a { font-size: 14px; }
+    h1 { font-size: 30px; }
+
+    .side-square { display: none; }
+
+    /* Header */
+    h2 { font-size: 30px; }
+    h3 { font-size: 25px; }
+
+    .about-me, .row, .hobby, .numbers {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .me-pic {
+        width: 200px;
+        
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 50px;
+    }
+
+    
+.socialNew {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ulsoc {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.lisoc {
+        list-style: none;
+        margin: 0 5px;
+        text-decoration: none;
+}
+.asoc{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    transition: 0.5s;
+}
+.asoc:hover {
+    color: #fff;
+}
+.asoc:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    border-radius: 50px;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.asoc:hover:before {
+    transform: scale(1);
+}
+.lisoc:nth-child(1) .asoc:hover:before{
+    background:#2867B2;
+}
+.lisoc:nth-child(2) .asoc:hover:before{
+    background: #1dcaff;
+}
+
+
+.lisoc:nth-child(3) .asoc:hover:before{
+    background:#024b30;
+}
+.lisoc:nth-child(4) .asoc:hover:before{
+    background: #F51B00;
+}
+.lisoc:nth-child(5) .asoc:hover:before{
+    background:#4d004d;
+}
     

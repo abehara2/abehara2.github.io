@@ -75,12 +75,6 @@ header, .main-header, .about-me, .experience, #connect, .projects, .hobbies, .st
     margin-bottom: 30px;
 }
 
-.about-info b, .connect-text b {
-    font-weight: 600;
-}
-
-.about-info p, .resume { font-size: 17px; }
-
 .me-pic {
     height: 500px;
     border-radius: 6px;

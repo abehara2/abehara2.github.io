@@ -58,74 +58,7 @@ header, .main-header, .about-me, .experience, #connect, .projects, .hobbies, .st
     margin: 0px auto;
 }
 
-/* -------------------- NAV BAR -------------------- */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 60px;
-}
 
-.pages {
-    display: flex;
-    justify-content: space-between;
-    width: 250px;
-}
-
-.pages a, header a {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-.pages a:after {
-    content: '';
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 1px;
-    right: 0;
-    background: var(--black);
-    transition: width .3s ease;
-}
-
-.pages a:hover:after { 
-    width: 100%;
-    left: 0;
-    background: var(--black);
-}
-
-/* -------------------- SQUARES -------------------- */
-.side-square {
-    position: fixed;
-    border: 3px solid rgba(242, 242, 242, 0.5);
-    width: 400px;
-    height: 400px;
-    z-index: -10000000;
-}
-
-.left-square {
-    left: -10%;
-    top: 30%;
-    transform: rotate(20deg);
-}
-
-.right-square {
-    right: -10%;
-    top: -15%;
-    transform: rotate(-20deg);
-}
-
-/* -------------------- HEADER -------------------- */
-.main-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 160px;
-}
-
-.typing { display: inline-flex; }
-
-/* -------------------- ABOUT ME -------------------- */
 .about-me {
     display: flex;
     flex-direction: row;

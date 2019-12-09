@@ -146,6 +146,19 @@ header, .main-header, .about-me {
     background:#4d004d;
 }
 
+.lisocB:nth-child(1) .asoc:hover:before{
+    background:#04D4F0;
+}
+.lisocB:nth-child(2) .asoc:hover:before{
+    background: #00FA9A;
+}
+
+
+.lisocB:nth-child(3) .asoc:hover:before{
+    background:#059DC0;
+}
+
+
 
 /* askdalsf */
 
@@ -200,6 +213,12 @@ svg {
 	animation-delay: -5s;
 }
 
+
 @keyframes stroke-offset{
 	100% {stroke-dashoffset: -35%;}
 }
+.navTitle a:hover{
+    color: blueviolet;
+
+}
+

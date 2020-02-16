@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>/Ashank/DFM</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/weird.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body style = "background-color:black " class="is-preload">
+
+		<!-- Header -->
+			<header style = "background-color:black " id="header">
+				<a href="index.html" class="title">Ashank Behara</a>
+				<nav>
+					<ul>
+						<li><a href="DFM.html" class="active">DFM</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section style ="background-color: #7f8082"id="main" class="wrapper">
+						<div style ="background-color: #7f8082" class="inner">
+							<h1 class="major">Design for Manufacturability</h1>
+                            For a class I took during the Spring 2019 semester, the final project required students to redesign a common household item 
+                            for increased assembly efficiency and recyclability. The class is titled ME 270 and I chose to redesign a mechanical pencil.<hr>
+                            <div style="text-align: center;"><h2><b> CAD Assembly & Part Engineering Drawings </b></h2> </div>
+                            <span class="image fit"><img src="dfm/pencilOG.png" alt="" /></span>
+                            
+                            <div class="box alt">
+                                <div class="row gtr-uniform">
+                                    <div class="col-4"><span class="image fit"><img src="dfm/one.png" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="dfm/two.png" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="dfm/three.png" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="dfm/four.png" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="dfm/five.png" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="dfm/six.png" alt="" /></span></div>
+                                </div>
+                            </div>
+					
+                            <hr>
+                            
+                            <div style="text-align: center;"><h2><b> DFM and DFA </b></h2> </div>
+                            
+                            <span class="image fit"><img src="dfm/prtbompencil.png" alt="" /></span>
+                            For each of the parts of the original assembly, I asked the three primary DFA questions regarding each component. </br></br>
+                            &nbsp;&nbsp; 1. Does the part move simultaneously with another part? </br>
+
+                            &nbsp;&nbsp; 2. Is the part of a different material, or isolated form, all the other parts already assembled? </br>
+
+                            &nbsp;&nbsp; 3. Can the manufacturing method and tolerance be the same for these parts? </br></br>
+
+                            After answering these questions, only three of the parts are essential and the other three can be combined or 
+                            eliminated entirely from the product. This leaves a theoretical minimum of 3 parts on the assembly.
+                            <hr>
+
+                            <div style="text-align: center;"><h2><b>Total Assembly Time </b></h2></div>
+                                <b>Symmetry</b> </br>
+                                &nbsp;Tip of Pencil: α = 360 | β = 360 | sum = 720 | time = 2.0s</br>
+
+                                &nbsp;Eraser Casing: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                &nbsp;Pencil Body: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                &nbsp;Lead Container: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                &nbsp;Pencil Grip: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                &nbsp;Twisting Top: α = 360 | β = 0 | sum = 360 | time = 1.0s</br></br>
+
+                                ​
+
+                                <b>Handling & Alignment Times</b></br>
+
+                                &nbsp;Tip of Pencil: 0.5s (placement) + 1.0s (turning) + 2.0s (fastening) + 2.0s (symmetry)</br>
+
+                                &nbsp;Eraser Casing: 0.5s (placement) + 0.3s (hole) + 1.0s (symmetry)</br>
+
+                                &nbsp;Pencil Body: 0.5s (placement) + 1.0s (symmetry)</br>
+
+                                &nbsp;Lead Container: 0.5s (placement) + 0.3s (hole) + 1.0s (symmetry)</br>
+
+                                &nbsp;Pencil Grip: 0.5s (placement) + 0.1s (pin) + 1.0s (symmetry)</br>
+
+                                &nbsp;Twisting Top: 0.5s (placement) + 0.1s (pin) + 1.0s (symmetry)</br></br>
+
+                                ​
+
+                                <b>Handling Difficulties</b></br>
+
+                                &nbsp;Tip of Pencil: 1.9s (small + slippery)</br>
+
+                                &nbsp;Eraser Casing: 1.5s (slippery)</br>
+
+                                &nbsp;Pencil Body: 0.0s</br>
+
+                                &nbsp;Lead Container: 1.5s (slippery)</br>
+
+                                &nbsp;Pencil Grip: 1.9s (slippery + flexible)</br>
+
+                                &nbsp;Twisting Top: 0.0s</br></br>
+
+                                &nbsp;<b>Total Time:</b> 22.4s</br></br>
+                                <hr>
+                                <div style="text-align: center;"><h2><b>DFA Efficiency & Index</b></h2> </div>
+
+                                <b>Formula</b> </br>
+                                (Ideal Time to Assemble) x (Theoretical Minimum) / (Total Time) </br> </br>
+
+                                ​
+
+                                <b> Calculation</b> <br/>
+
+                                (3) (3) / 22.4 = 0.401785 = 40.178571% efficiency</br></br>
+
+                                ​
+
+                                If the DFA index is less than the 20% to 25% range, the assembly is in dire need of a redesign. 
+                                40.1785% is above this range and although a redesign is unnecessary, it would be a good idea to 
+                                redesign in order to improve the efficiency further. <hr>
+
+                                <div style="text-align: center;"><h2><b> Redesign Concepts </b></h2> </div>
+                                As for the redesign, there is not a lot of room for improvement for this product's functionality or 
+                                recyclability. There is a possibility to merge the pencil body (#5 on Eng. Drawing) and the lead container 
+                                (#4 on Eng. Drawing) which would not reduce the amount of material being used or the cost of the product. 
+                                There is also some complication to this as the mechanism to dispense the graphite is built into the lead 
+                                container, but at a glance this seems like a possible idea. A very feasible redesign that would help 
+                                recyclability would be to combine the pencil body and the pencil tip (#1 on Eng. Drawing). The pencil
+                                 tip is a metal screw-on and is separate only for the aesthetic and provides no real benefit to the 
+                                 rigidity, cost, or recyclability of the product.  In fact, replacing the metal tip with plastic will
+                                  increase the reprocess-ability of the product. The last idea to improve this product would be to get r
+                                  id of the gel grips. Gel grips have recently started to be manufactured using thermoplastic elastomers, 
+                                  the most common of these being polyphenylene ether. These thermoplastics are well known for their 
+                                  reprocess-ability and provide many ecological benefits to other rubbers. Eliminating this grip 
+                                  does not benefit the recyclability of the product, but it will help to drive down the cost of the 
+                                  pencil. If all of these changes are implemented, there is a theoretical minimum of three parts. 
+                                  However, two of the changes provide little to no benefit for the recyclability of the product so 
+                                  it would be ideal to cut the assembly down to five parts by combining the pencil tip 
+                                  and pencil body. </br></br>
+
+                                  <span class="image fit"><img src="dfm/pughpencil.png" alt="" /></span>
+
+                                  Depicted above is a Pugh Matrix outlining the three redesign possibilities that could be implemented on a 
+                                  newer version of the product. According to this diagram, the only suggestion that would increase 
+                                  recyclability, let alone cost and rigidity, would be, as discussed before, to merge the pencil 
+                                  body and tip. Combining both the tip and the body would eliminate an extra material being used in
+                                   fabrication which would aid reprocessability. <hr>
+
+                                   <div style="text-align: center;"><h2><b> Redesign of Pencil Body </b></h2></div>
+                                   
+                                   <span class="image fit"><img src="dfm/redesbody.png" alt="" /></span>
+                                   Depicted below is an outline drawing that has the assembled view and exploded view showing that the
+                                    redesigned pencil body indeed fits with the other parts from the original product. The pencil grip 
+                                    in the exploded view is still attached to the pencil body.
+                                    
+                                    <span class="image fit"><img src="dfm/outlinepen.png" alt="" /></span>
+
+                                    <div style="text-align: center;"><h2><b> Design of Experiment </b></h2> </br> </br></div>
+                                    The hypothetical main problem with this redesign is that for every 40 clicks to dispense lead out of
+                                     the pencil, the lead jams twice. The variables that affect the dispensing of the lead are the dispensing 
+                                     force and the coefficient of friction of the polypropylene that was injection molded to form the part.<br><br>
+
+                                    For this process, I decided that a 2  factorial design would need to be performed meaning that the two 
+                                    variables discussed above will be examined on a low level (-1) and a high level (+1). This factorial 
+                                    design contains 4 unique testing conditions that are necessary in order to collect all data possible.
+                                     The first table shows the design variables with their low and high levels and the second table shows 
+                                     the tests. <br><br>
+
+                                     
+                                     <span class="image fit"><img src="dfm/doeone.png" alt="" /></span>
+
+
+                                    From this data we see that there are 2 valuable comparisons that can tell us how the jamming varies according to 
+                                    the coefficient of friction and 2 valuable comparisons that we can use to tell us how the force of dispensing 
+                                    affects jamming. For the coefficient of friction I can use the  horizontal line segments that signify
+                                     Test 1-2 and Test 3-4 and for the force of dispensing I can use the vertical lines that signify Test 1-3 and Test 2-4.<br><br>
+
+                                     <span class="image fit"><img src="dfm/doetwo.png" alt="" /></span>
+                                     From this data we can see that as coefficient of friction increases, the number of jams increases as the evaluated equation yields a
+                                      positive number. On the other hand, as force of dispensing increases, the number of jams decreases as denoted by the negative value. <hr>
+                                      <div style="text-align: center;"><h2><b> Variance & Significant Results </b></h2> </br> </br></div>
+
+                                      
+                                      <span class="image fit"><img src="dfm/variancepen.png" alt="" /></span>
+
+                                      From calculating the variance and standard deviation we can then find the significant effects and sigma significance. The 2 sigma 
+                                      significance is found by multiplying the average standard deviation by 2 and the significant values are 
+                                      found through sum product calculations like those done previously. The 2 sigma significance is useful 
+                                      because any values that are greater than this are considered significant. <br><br>
+
+                                      <span class="image fit"><img src="dfm/stdpen.png" alt="" /></span>
+                                      After looking at the data, it was deemed that only the coefficient of friction had a significant effect on the performance
+                                       on the lead dispensing mechanism. In order to enact this change in the design, it would be better to use 
+                                       HDPE instead of polypropylene for the redesigned pencil body and cap because it has a significantly 
+                                       lower static coefficient of 0.100. This design change mildly affects the reprocessability of the pencil 
+                                       because it is a different material, but does not affect its recyclability.<hr>
+
+                                       <div style="text-align: center;"><h2><b> Re-DFM & Re-DFA </b></h2> </br> </br></div>    
+                                       
+                                       <b>Cost Analysis</b><br>
+                                       Depicted below is a revised Bill of Materials with the redesigned pencil body. There were no fastening costs 
+                                       in this revision as there are no bolts, screws, rivets, etc.<br><br>
+
+                                       
+                                       <span class="image fit"><img src="dfm/redfa.png" alt="" /></span>
+                                       <div style="text-align: center;"><h2><b> New Total Assembly Time </b></h2> </br> </br></div>    
+                                       <b>Symmetry</b></br>
+
+                                        Eraser Casing: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                        Pencil Body: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                        Lead Container: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                        Pencil Grip: α = 360 | β = 0 | sum = 360 | time = 1.0s</br>
+
+                                        Twisting Top: α = 360 | β = 0 | sum = 360 | time = 1.0s</br></br>
+
+                                        ​
+
+                                        
+                                        <b>Handling & Alignment Times</b></br>
+
+                                        Eraser Casing: 0.5s (placement) + 0.3s (hole) + 1.0s (symmetry)</br>
+
+                                        Pencil Body: 0.5s (placement) + 1.0s (symmetry)</br>
+
+                                        Lead Container: 0.5s (placement) + 0.3s (hole) + 1.0s (symmetry)</br>
+
+                                        Pencil Grip: 0.5s (placement) + 0.1s (pin) + 1.0s (symmetry)</br>
+
+                                        Twisting Top: 0.5s (placement) + 0.1s (pin) + 1.0s (symmetry)</br></br>
+
+                                        ​
+
+                                        <b>Handling Difficulties</b></br>
+
+                                        Eraser Casing: 1.5s (slippery)</br>
+
+                                        Pencil Body: 0.0s</br>
+
+                                        Lead Container: 1.5s (slippery)</br>
+
+                                        Pencil Grip: 1.9s (slippery + flexible)</br>
+
+                                        Twisting Top: 0.0s</br></br>
+
+                                        ​
+
+                                        &nbsp;<b>Total Time:</b> 13.0s<hr>
+
+                                        <div style="text-align: center;"><h2><b>New DFA Efficiency & Index</b></h2> </br> </br></div>
+
+                                        <b>Formula</b> </br>
+                                        (Ideal Time to Assemble) x (Theoretical Minimum) / (Total Time) </br> </br>
+
+                                        ​
+
+                                        <b> Calculation</b> <br/>
+
+                                        (3) (3) / 13.0 = 0.692307 = 69.2308% efficiency</br></br>
+                                        Overall the redesign of the product seemed successful. The DFA efficiency rose by 29.0523%, 
+                                        total costs decreased by $0.40, and total investment costs decreased as well. As for function
+                                         of the product, the function seems to be close to the same. This is good because the product,
+                                          pre-redesign, was fully functional. The small fix the redesign did make was when fidgeting with 
+                                          the pencil, the cap would sometimes fall off, but because the cap and body are now one piece, 
+                                          this is no longer an issue. In conclusion, the redesign improved cost, functionality, and kept 
+                                          the quality of the product around the same, if not better.
+
+                        </div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer style = "background-color:black " id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

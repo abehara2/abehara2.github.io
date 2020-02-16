@@ -98,7 +98,7 @@ body {
     width: 100%;
     backface-visibility: hidden;
     box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.4);
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .card__side--front {

@@ -6,7 +6,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p {
     scroll-behavior: smooth;
 }
 body {
-    --blue: rgb(255, 1, 1);
+    --blue: #ffffff;
     --black: #000000;
     --grey: #848484;
     /* background-image: url("doodle.jpg") */

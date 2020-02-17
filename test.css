@@ -15,7 +15,7 @@ html {
 body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
-    line-height: 1.7;
+    /* line-height: 1.7; */
     padding: 3rem;
     box-sizing: border-box;
 }
@@ -73,10 +73,11 @@ body {
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 25rem;
+    height: 30rem;
     width: 100%;
     transition: all ease-in-out 400ms;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .card:hover{
@@ -94,7 +95,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25rem;
+    height: 30rem;
     width: 100%;
     backface-visibility: hidden;
     box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.4);

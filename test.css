@@ -31,42 +31,53 @@ body {
 
 .card-one {
     grid-column: 1/4;
+    border-radius: 10px;
 }
 
 .card-two {
     grid-column: 1/4;
+    border-radius: 10px;
 }
 
 .card-three {
     grid-column: 1/4;
+    border-radius: 10px;
 }
 
 .card-four {
     grid-column: 1/4;
+    border-radius: 10px;
 }
 
 .card-five {
     grid-column: 1/4;
+    border-radius: 10px;
 }
 
 .card-six {
     grid-column: 1/4;
+    border-radius: 10px;
 }
 
 .card-seven {
     grid-column: 1/4;
+    border-radius: 10px;
 }
 .card-eight {
     grid-column: 1/4;
+    border-radius: 10px;
 }
 .card-nine {
     grid-column: 1/4;
+    border-radius: 10px;
 }
 .card-ten {
     grid-column: 1/4;
+    border-radius: 10px;
 }
 .card-eleven {
     grid-column: 1/4;
+    border-radius: 10px;
 }
 
 .card {
@@ -270,42 +281,53 @@ body {
 
     .card-one {
         grid-column: 1/3;
+        border-radius: 10px;
     }
 
     .card-two {
         grid-column: 3/4;
+        border-radius: 10px;
     }
 
     .card-three {
         grid-column: 1/2;
+        border-radius: 10px;
     }
 
     .card-four {
         grid-column: 2/2;
+        border-radius: 10px;
     }
 
     .card-five {
         grid-column: 3/4;
+        border-radius: 10px;
     }
 
     .card-six {
         grid-column: 1/2;
+        border-radius: 10px;
     }
 
     .card-seven {
         grid-column: 2/4;
+        border-radius: 10px;
     }
     .card-eight {
         grid-column: 1/4;
+        border-radius: 10px;
     }
     .card-nine {
         grid-column: 1/4;
+        border-radius: 10px;
     }
     .card-ten {
         grid-column: 1/4;
+        border-radius: 10px;
     }
     .card-eleven {
         grid-column: 1/4;
+        border-radius: 10px;
     }
    
    

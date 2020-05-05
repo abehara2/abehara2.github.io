@@ -145,6 +145,10 @@ header, .main-header, .about-me {
 .lisoc:nth-child(5) .asoc:hover:before{
     background:#4d004d;
 }
+.lisoc:nth-child(6) .asoc:hover:before{
+    background: #1DB954;
+}
+
 
 .lisocB:nth-child(1) .asoc:hover:before{
     background:#04D4F0;

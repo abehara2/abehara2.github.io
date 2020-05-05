@@ -137,7 +137,7 @@ header, .main-header, .about-me {
 
 
 .lisoc:nth-child(3) .asoc:hover:before{
-    background:#024b30;
+    background:#ff7400;
 }
 .lisoc:nth-child(4) .asoc:hover:before{
     background: #F51B00;

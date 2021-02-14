@@ -139,13 +139,13 @@ header, .main-header, .about-me {
 .lisoc:nth-child(3) .asoc:hover:before{
     background:#ff7400;
 }
-.lisoc:nth-child(4) .asoc:hover:before{
+/* .lisoc:nth-child(4) .asoc:hover:before{
     background: #F51B00;
-}
-.lisoc:nth-child(5) .asoc:hover:before{
+} */
+.lisoc:nth-child(4) .asoc:hover:before{
     background:#4d004d;
 }
-.lisoc:nth-child(6) .asoc:hover:before{
+.lisoc:nth-child(5) .asoc:hover:before{
     background: #1DB954;
 }
 

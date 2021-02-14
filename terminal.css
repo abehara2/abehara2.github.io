@@ -68,7 +68,7 @@ span {
 
 .line1 {
   
-  color: #007BFF;
+  color: #fff;
   -webkit-animation: type .5s 1s steps(20, end) forwards;
   -moz-animation: type .5s 1s steps(20, end) forwards;
   -o-animation: type .5s 1s steps(20, end) forwards;
@@ -83,7 +83,7 @@ span {
 }
 
 .line2 {
-  color: rgb(105, 200, 238);
+  color: #fff;
   -webkit-animation: type .5s 2s steps(20, end) forwards;
   -moz-animation: type .5s 2s steps(20, end) forwards;
   -o-animation: type .5s 2s steps(20, end) forwards;
@@ -100,7 +100,7 @@ span {
 .line3 {
   
   
-  color: #9CD9F0;
+  color: #fff;
   -webkit-animation: type .5s 3s steps(20, end) forwards;
   -moz-animation: type .5s 3s steps(20, end) forwards;
   -o-animation: type .5s 3s steps(20, end) forwards;

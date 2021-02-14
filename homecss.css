@@ -50,7 +50,7 @@ p, a {
 }
 
 header, .main-header, .about-me {
-    width: 65%;
+    width: 100%;
     margin: 0px auto;
 }
 
